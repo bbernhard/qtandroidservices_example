@@ -19,7 +19,9 @@ public class MyCustomAppService extends QtService {
    /** The service is starting, due to a call to startService() */
    @Override
    public int onStartCommand(Intent intent, int flags, int startId) {
-      return super.onStartCommand(intent, flags, startId);
+      int ret = super.onStartCommand(intent, flags, startId);
+      Log.i("Service", "Service created!");
+      return ret;
       //return mStartMode;
    }
 

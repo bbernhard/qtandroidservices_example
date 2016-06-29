@@ -13,8 +13,7 @@ public class MyCustomAppActivity extends QtActivity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Log.i("Activity", "Starting service!");
-        Intent serviceIntent = new Intent();
-        serviceIntent.setAction("org.qtproject.example.MyCustomAppService");
+        Intent serviceIntent = new Intent(this, org.qtproject.example.MyCustomAppService.class);
         startService(serviceIntent);
     }
     @Override

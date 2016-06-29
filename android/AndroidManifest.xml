@@ -46,7 +46,7 @@
                           application still try to draw after
                           "applicationStateChanged(Qt::ApplicationSuspended)"
                           signal is sent! -->
-            <meta-data android:name="android.app.background_running" android:value="true"/>
+            <meta-data android:name="android.app.background_running" android:value="false"/>
             <!-- Background running -->
 
             <!-- auto screen scale factor -->
